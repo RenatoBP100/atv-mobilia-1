@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="teste.html">home</a></li>
+                <li><a href="#">contact</a></li>
+                <li>
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ut quod eveniet beatae similique veritatis?
+            Dignissimos distinctio quis maxime pariatur atque suscipit illum. Consectetur illo sit placeat dolore saepe
+            accusamus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat ad dolorum, ex laborum sed, molestiae
+            magnam voluptates expedita nemo nam, amet harum. Id voluptas quos quidem asperiores repellendus vitae
+            dolorum.
+        </p>
+        <p id="btn-modal">
+            abrir modal
+        </p>
+        <div id="modal">
+            <div>
+                <h2>
+                    janela modal
+                </h2>
+                <p>
+                    conteudo modal
+                </p>
+            </div>
+
+        </div>
+    </header>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        nav>ul {
+            display: flex;
+            margin: 2rem;
+
+
+        }
+
+        nav ul li ul {
+            display: none;
+
+        }
+
+        nav ul li:hover ul {
+            display: block;
+            transition: 1s;
+            background-color: white;
+            border-radius: 1rem;
+            position: absolute;
+        }
+
+        div#modal {
+            position: absolute;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #1414142f;
+            display: none;
+
+        }
+
+        div#modal div {
+            background: white;
+            margin: 25vh 25vw;
+            border-radius: 13px;
+        }
+    </style>
+
+<script>
+    alert("jjj");
+    console.log("oi");
+     let btnModal = document.getElementById("btn-modal");
+        console.log(btnModal);
+        let modal = document.getElementById("modal");
+
+        console.log(btnModal);
+        btnModal.addEventListener("click", function () {
+            console.log("Foi");
+            modal.style.display = "block";
+
+        });
+        modal.addEventListener("click",function(){
+            modal.style.display = "none";
+        })
+        
+</script>
+
+</body>
+
+</html>
